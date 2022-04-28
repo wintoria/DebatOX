@@ -1,0 +1,64 @@
+/* ogólne ------------------ */
+* {margin:0px; padding: 0px;}
+body{ font: 16px Verdana; line-height:1.6;background:#EDE6DE;}
+body:before{content: ' ';display: block;position: absolute;left: 0;top: 0;width: 100%;height: 120%;opacity: 0.15;background-image: url("img/tlo.png");background-repeat: repeat;z-index: -2;}
+#wrapper { width:90%; overflow:hidden; margin: 0 auto; }
+a {color: #354458;}
+*{ scroll-behavior: smooth; }
+
+
+/* logo ------------ */
+#header { height:100px; background: #4c6485d7; margin: 0 0 10px 0; }
+#header h1 {padding: 20px; color: #E9E0D6;}
+
+/* tresc ------------ */
+#content { width:75%; float:left; padding:1%; overflow:hidden; text-align: center;}
+
+/* menu ------------ */
+#menu { background: #4c648565; width:20%; float:right; padding:1%; overflow:hidden; }
+#menu h5 {padding:3px 3px 15px 3px; font-size:14px;}
+#menu ul li {list-style-type:none; padding:0 0 0 10px;}
+
+@media only screen and (max-width: 900px) {
+    #menu {width:88%; position:absolute; height:30px;}
+    #menu h5 {display: none;}
+    #menu ul li {display: inline; }
+    #menu ul li:after {content: " | ";}
+    #content {width: 98%;position:relative; top: 30px;margin-top:5%;}
+}
+
+
+#myBtn1{float: clear;}
+.osoba{float: left;width: 25%;display: flex;justify-content: center;background: none;border: none;}
+.osoba:hover{background-color: #854c4ca9;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;border: ridge;}
+.osobazdj{width: 20%;float: left;}
+.modal { display: none;/* Hidden by default */position: fixed;/* Stay in place */z-index: 1;/* Sit on top */padding-top: 150px; /* Location of the box */left: 0;top: 0;width: 100%;/* Full width */height: 100%;/* Full height */overflow: auto;/* Enable scroll if needed */background-color: rgba(0, 0, 0, 0.4);/* Black w/ opacity */overflow: auto;}
+.modal-content {max-height: 80%;overflow: auto;position: relative;background-color: #fefefe;margin: auto;padding: 0;border: 1px solid #888;width: 80%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);-webkit-animation-name: okienko;-webkit-animation-duration: 0.4s;animation-name: okienko;animation-duration: 0.4s;}
+
+/* animacja okienka */
+@-webkit-keyframes okienko {
+	from {top: -300px;opacity: 0}
+	to {top: 0;opacity: 1	}
+}
+@keyframes okienko {
+	from {top: -300px;opacity: 0}
+	to {top: 0;opacity: 1}
+}
+/* guzik zamykania okienka */
+.close {color: white;float: right;font-size: 28px;font-weight: bold;}
+.close:hover, .close:focus {color: #000;text-decoration: none;cursor: pointer;}
+.modal-header {padding: 2px 16px;background-color: grey;color: white;}
+.modal-body {margin: auto;display: flex;justify-content: center;width: 50%;padding: 5px 16px;}
+.modal-footer {padding: 2px 16px;background-color: grey;color: white;}
+
+@media only screen and (max-width: 1300px) {
+    .modal-body {margin: auto;display: flex;justify-content: center;width: 80%;padding: 5px 16px;}
+    .osobazdj{width: 15%; height: 30%; float: right;}
+}
+
+@media only screen and (max-width: 800px) {
+    .osobazdj{display: none;}
+}
+
+
+.aplikacja{width: 30%;float:left;}
