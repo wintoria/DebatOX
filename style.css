@@ -15,15 +15,15 @@ a {color: #354458;}
 #content { width:75%; float:left; padding:1%; overflow:hidden; text-align: center;}
 
 /* menu ------------ */
-#menu { background: #4c648565; width:20%; float:right; padding:1%; overflow:hidden; }
+#menu { background: #4c648565; width:20%; float:right; padding:1%;/*padding-left:1%; padding-right:1%; padding-top:5%; padding-bottom:5%;*/ overflow:hidden; }
 #menu h5 {padding:3px 3px 15px 3px; font-size:14px;}
 #menu ul li {list-style-type:none; padding:0 0 0 10px;}
 
 @media only screen and (max-width: 900px) {
-    #menu {width:88%; position:absolute; height:30px;}
+    #menu {width:88%; position:absolute; height:45px;}
     #menu h5 {display: none;}
     #menu ul li {display: inline; }
-    #menu ul li:after {content: " | ";}
+    #menu ul li:after {content: " |";}
     #content {width: 98%;position:relative; top: 30px;margin-top:5%;}
 }
 
@@ -32,7 +32,7 @@ a {color: #354458;}
 .osoba{float: left;width: 25%;display: flex;justify-content: center;background: none;border: none;}
 .osoba:hover{background-color: #854c4ca9;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;border: ridge;}
 .osobazdj{width: 20%;float: left;}
-.modal { display: none;/* Hidden by default */position: fixed;/* Stay in place */z-index: 1;/* Sit on top */padding-top: 150px; /* Location of the box */left: 0;top: 0;width: 100%;/* Full width */height: 100%;/* Full height */overflow: auto;/* Enable scroll if needed */background-color: rgba(0, 0, 0, 0.4);/* Black w/ opacity */overflow: auto;}
+.modal { display: none; position: fixed; z-index: 1; padding-top: 150px; left: 0;top: 0;width: 100%; height: 100%; overflow: auto; background-color: rgba(0, 0, 0, 0.4); overflow: auto;}
 .modal-content {max-height: 80%;overflow: auto;position: relative;background-color: #fefefe;margin: auto;padding: 0;border: 1px solid #888;width: 80%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);-webkit-animation-name: okienko;-webkit-animation-duration: 0.4s;animation-name: okienko;animation-duration: 0.4s;}
 
 /* animacja okienka */
@@ -62,3 +62,6 @@ a {color: #354458;}
 
 
 .aplikacja{width: 30%;float:left;}
+
+.table{width: 100%; border-collapse: collapse; border-spacing: 0; margin-bottom: 5%;}
+.table td,th {font-size: 14px; border-top: 1px solid #ddd; padding: 10px 12px 10px 12px; text-align: left; vertical-align: top;}
